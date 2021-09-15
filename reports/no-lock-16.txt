@@ -1,0 +1,179 @@
+2021-09-15T19:35:42.7733507Z Found online and idle hosted runner in the current repository's organization account that matches the required labels: 'ubuntu-20.04'
+2021-09-15T19:35:42.8997141Z Waiting for a Hosted runner in the 'organization' to pick this job...
+2021-09-15T19:35:43.5541115Z Job is waiting for a hosted runner to come online.
+2021-09-15T19:35:48.2594281Z Job is about to start running on the hosted runner: GitHub Actions 2 (hosted)
+2021-09-15T19:35:52.3598453Z Current runner version: '2.282.0'
+2021-09-15T19:35:52.3630672Z ##[group]Operating System
+2021-09-15T19:35:52.3631721Z Ubuntu
+2021-09-15T19:35:52.3632215Z 20.04.3
+2021-09-15T19:35:52.3632787Z LTS
+2021-09-15T19:35:52.3633302Z ##[endgroup]
+2021-09-15T19:35:52.3633988Z ##[group]Virtual Environment
+2021-09-15T19:35:52.3634752Z Environment: ubuntu-20.04
+2021-09-15T19:35:52.3635361Z Version: 20210906.1
+2021-09-15T19:35:52.3636544Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210906.1/images/linux/Ubuntu2004-README.md
+2021-09-15T19:35:52.3638057Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20210906.1
+2021-09-15T19:35:52.3639092Z ##[endgroup]
+2021-09-15T19:35:52.3639824Z ##[group]Virtual Environment Provisioner
+2021-09-15T19:35:52.3640540Z 1.0.0.0-master-20210816-1
+2021-09-15T19:35:52.3641197Z ##[endgroup]
+2021-09-15T19:35:52.3643383Z ##[group]GITHUB_TOKEN Permissions
+2021-09-15T19:35:52.3644876Z Actions: write
+2021-09-15T19:35:52.3645540Z Checks: write
+2021-09-15T19:35:52.3646130Z Contents: write
+2021-09-15T19:35:52.3646790Z Deployments: write
+2021-09-15T19:35:52.3647678Z Discussions: write
+2021-09-15T19:35:52.3648258Z Issues: write
+2021-09-15T19:35:52.3648860Z Metadata: read
+2021-09-15T19:35:52.3649449Z Packages: write
+2021-09-15T19:35:52.3650130Z PullRequests: write
+2021-09-15T19:35:52.3650824Z RepositoryProjects: write
+2021-09-15T19:35:52.3651592Z SecurityEvents: write
+2021-09-15T19:35:52.3652264Z Statuses: write
+2021-09-15T19:35:52.3652990Z ##[endgroup]
+2021-09-15T19:35:52.3656442Z Prepare workflow directory
+2021-09-15T19:35:52.4324801Z Prepare all required actions
+2021-09-15T19:35:52.4335806Z Getting action download info
+2021-09-15T19:35:52.6088918Z Download action repository 'actions/checkout@v2' (SHA:5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+2021-09-15T19:35:54.4302411Z Download action repository 'actions/setup-node@v2' (SHA:25316bbc1f10ac9d8798711f44914b1cf3c4e954)
+2021-09-15T19:35:54.8645945Z ##[group]Run actions/checkout@v2
+2021-09-15T19:35:54.8646682Z with:
+2021-09-15T19:35:54.8647623Z   repository: xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:35:54.8648879Z   token: ***
+2021-09-15T19:35:54.8649403Z   ssh-strict: true
+2021-09-15T19:35:54.8650049Z   persist-credentials: true
+2021-09-15T19:35:54.8650654Z   clean: true
+2021-09-15T19:35:54.8651176Z   fetch-depth: 1
+2021-09-15T19:35:54.8651682Z   lfs: false
+2021-09-15T19:35:54.8652206Z   submodules: false
+2021-09-15T19:35:54.8652733Z ##[endgroup]
+2021-09-15T19:35:55.1089022Z Syncing repository: xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:35:55.1090817Z ##[group]Getting Git version info
+2021-09-15T19:35:55.1092328Z Working directory is '/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts'
+2021-09-15T19:35:55.1129289Z [command]/usr/bin/git version
+2021-09-15T19:35:55.1272936Z git version 2.33.0
+2021-09-15T19:35:55.1296741Z ##[endgroup]
+2021-09-15T19:35:55.1304096Z Deleting the contents of '/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts'
+2021-09-15T19:35:55.1308679Z ##[group]Initializing the repository
+2021-09-15T19:35:55.1312943Z [command]/usr/bin/git init /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts
+2021-09-15T19:35:55.1386910Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-09-15T19:35:55.4759716Z hint: is subject to change. To configure the initial branch name to use in all
+2021-09-15T19:35:55.4813134Z hint: of your new repositories, which will suppress this warning, call:
+2021-09-15T19:35:55.4814081Z hint: 
+2021-09-15T19:35:55.4815483Z hint: 	git config --global init.defaultBranch <name>
+2021-09-15T19:35:55.4816298Z hint: 
+2021-09-15T19:35:55.4817306Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-09-15T19:35:55.4818607Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-09-15T19:35:55.4819811Z hint: 
+2021-09-15T19:35:55.4820659Z hint: 	git branch -m <name>
+2021-09-15T19:35:55.4822299Z Initialized empty Git repository in /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/.git/
+2021-09-15T19:35:55.4824591Z [command]/usr/bin/git remote add origin https://github.com/xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:35:55.4826407Z ##[endgroup]
+2021-09-15T19:35:55.4827806Z ##[group]Disabling automatic garbage collection
+2021-09-15T19:35:55.4828878Z [command]/usr/bin/git config --local gc.auto 0
+2021-09-15T19:35:55.4830214Z ##[endgroup]
+2021-09-15T19:35:55.4833382Z ##[group]Setting up auth
+2021-09-15T19:35:55.4834584Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-15T19:35:55.4836401Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-15T19:35:55.4838258Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-15T19:35:55.4840462Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-15T19:35:55.4842628Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-09-15T19:35:55.4844300Z ##[endgroup]
+2021-09-15T19:35:55.4845611Z ##[group]Fetching the repository
+2021-09-15T19:35:55.4849266Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +2f94002819243ffdb5b3b2342fab49cdfca37c58:refs/remotes/origin/main
+2021-09-15T19:35:56.4273902Z remote: Enumerating objects: 10, done.        
+2021-09-15T19:35:56.4366332Z remote: Counting objects:  10% (1/10)        
+2021-09-15T19:35:56.4367490Z remote: Counting objects:  20% (2/10)        
+2021-09-15T19:35:56.4368347Z remote: Counting objects:  30% (3/10)        
+2021-09-15T19:35:56.4369410Z remote: Counting objects:  40% (4/10)        
+2021-09-15T19:35:56.4370243Z remote: Counting objects:  50% (5/10)        
+2021-09-15T19:35:56.4371004Z remote: Counting objects:  60% (6/10)        
+2021-09-15T19:35:56.4371777Z remote: Counting objects:  70% (7/10)        
+2021-09-15T19:35:56.4372548Z remote: Counting objects:  80% (8/10)        
+2021-09-15T19:35:56.4373669Z remote: Counting objects:  90% (9/10)        
+2021-09-15T19:35:56.4374438Z remote: Counting objects: 100% (10/10)        
+2021-09-15T19:35:56.4375277Z remote: Counting objects: 100% (10/10), done.        
+2021-09-15T19:35:56.4376095Z remote: Compressing objects:  16% (1/6)        
+2021-09-15T19:35:56.4376925Z remote: Compressing objects:  33% (2/6)        
+2021-09-15T19:35:56.4377750Z remote: Compressing objects:  50% (3/6)        
+2021-09-15T19:35:56.4378561Z remote: Compressing objects:  66% (4/6)        
+2021-09-15T19:35:56.4379384Z remote: Compressing objects:  83% (5/6)        
+2021-09-15T19:35:56.4380213Z remote: Compressing objects: 100% (6/6)        
+2021-09-15T19:35:56.4381673Z remote: Compressing objects: 100% (6/6), done.        
+2021-09-15T19:35:56.4383274Z remote: Total 10 (delta 0), reused 8 (delta 0), pack-reused 0        
+2021-09-15T19:35:56.4384675Z From https://github.com/xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:35:56.4386142Z  * [new ref]         2f94002819243ffdb5b3b2342fab49cdfca37c58 -> origin/main
+2021-09-15T19:35:56.4387795Z ##[endgroup]
+2021-09-15T19:35:56.4390417Z ##[group]Determining the checkout info
+2021-09-15T19:35:56.4391951Z ##[endgroup]
+2021-09-15T19:35:56.4393230Z ##[group]Checking out the ref
+2021-09-15T19:35:56.4394601Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2021-09-15T19:35:56.4396269Z Switched to a new branch 'main'
+2021-09-15T19:35:56.4397480Z Branch 'main' set up to track remote branch 'main' from 'origin'.
+2021-09-15T19:35:56.4398900Z ##[endgroup]
+2021-09-15T19:35:56.4399823Z [command]/usr/bin/git log -1 --format='%H'
+2021-09-15T19:35:56.4400936Z '2f94002819243ffdb5b3b2342fab49cdfca37c58'
+2021-09-15T19:35:56.4548896Z ##[group]Run actions/setup-node@v2
+2021-09-15T19:35:56.4549518Z with:
+2021-09-15T19:35:56.4550038Z   node-version: 16
+2021-09-15T19:35:56.4550622Z   always-auth: false
+2021-09-15T19:35:56.4551219Z   check-latest: false
+2021-09-15T19:35:56.4552231Z   token: ***
+2021-09-15T19:35:56.4552751Z ##[endgroup]
+2021-09-15T19:35:56.6471293Z Attempting to download 16...
+2021-09-15T19:35:56.8675588Z Acquiring 16.9.1 - x64 from https://github.com/actions/node-versions/releases/download/16.9.1-1224334450/node-16.9.1-linux-x64.tar.gz
+2021-09-15T19:35:57.2921478Z Extracting ...
+2021-09-15T19:35:57.3091566Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword -C /home/runner/work/_temp/e83047ab-45a7-401f-a664-886e410b7d69 -f /home/runner/work/_temp/9f637fe8-de7a-4162-9a3f-726f6335efa6
+2021-09-15T19:35:58.2526366Z Adding to the cache ...
+2021-09-15T19:35:59.2190500Z Done
+2021-09-15T19:35:59.2378618Z ##[group]Run npm install
+2021-09-15T19:35:59.2379205Z [36;1mnpm install[0m
+2021-09-15T19:35:59.2428965Z shell: /usr/bin/bash -e {0}
+2021-09-15T19:35:59.2429470Z ##[endgroup]
+2021-09-15T19:36:31.0134532Z npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+2021-09-15T19:36:31.0216597Z npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+2021-09-15T19:36:32.3330556Z npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+2021-09-15T19:36:32.4172856Z npm WARN deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+2021-09-15T19:36:32.4213745Z npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+2021-09-15T19:36:33.0239139Z npm WARN deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+2021-09-15T19:36:33.9972663Z npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+2021-09-15T19:36:35.2371755Z npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+2021-09-15T19:36:35.8484623Z npm WARN deprecated sane@4.1.0: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+2021-09-15T19:36:37.5197373Z npm WARN deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+2021-09-15T19:36:39.8287305Z npm WARN deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+2021-09-15T19:36:43.0490167Z npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+2021-09-15T19:36:50.2747773Z npm WARN deprecated core-js@2.6.12: core-js@<3.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+2021-09-15T19:36:51.3217735Z 
+2021-09-15T19:36:51.3219667Z added 1495 packages, and audited 1496 packages in 52s
+2021-09-15T19:36:51.3225803Z 
+2021-09-15T19:36:51.3228391Z 190 packages are looking for funding
+2021-09-15T19:36:51.3230350Z   run `npm fund` for details
+2021-09-15T19:36:51.3257588Z 
+2021-09-15T19:36:51.3258504Z found 0 vulnerabilities
+2021-09-15T19:36:51.3591779Z ##[group]Run npm run lint
+2021-09-15T19:36:51.3592349Z [36;1mnpm run lint[0m
+2021-09-15T19:36:51.3637590Z shell: /usr/bin/bash -e {0}
+2021-09-15T19:36:51.3638127Z ##[endgroup]
+2021-09-15T19:36:51.6636291Z 
+2021-09-15T19:36:51.6637979Z > lint
+2021-09-15T19:36:51.6639868Z > wp-scripts lint-js
+2021-09-15T19:36:51.6640738Z 
+2021-09-15T19:36:54.7089403Z jsxBracketSameLine is deprecated.
+2021-09-15T19:36:54.7578229Z 
+2021-09-15T19:36:54.7582478Z /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/main.js
+2021-09-15T19:36:54.7602663Z ##[error]  1:21  error  Replace `·a,·b·` with `a,·b`  prettier/prettier
+2021-09-15T19:36:54.7628206Z 
+2021-09-15T19:36:54.7630562Z ✖ 1 problem (1 error, 0 warnings)
+2021-09-15T19:36:54.7632454Z   1 error and 0 warnings potentially fixable with the `--fix` option.
+2021-09-15T19:36:54.7633444Z 
+2021-09-15T19:36:54.8070123Z ##[error]Process completed with exit code 1.
+2021-09-15T19:36:54.8179825Z Post job cleanup.
+2021-09-15T19:36:54.9263527Z [command]/usr/bin/git version
+2021-09-15T19:36:54.9309727Z git version 2.33.0
+2021-09-15T19:36:54.9346559Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-15T19:36:54.9383156Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-15T19:36:54.9622323Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-15T19:36:54.9649283Z http.https://github.com/.extraheader
+2021-09-15T19:36:54.9658875Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-09-15T19:36:54.9693415Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-15T19:36:55.0005293Z Cleaning up orphan processes

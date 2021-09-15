@@ -1,0 +1,208 @@
+2021-09-15T19:37:32.6002051Z Found online and idle hosted runner in the current repository's organization account that matches the required labels: 'ubuntu-20.04'
+2021-09-15T19:37:32.6893964Z Waiting for a Hosted runner in the 'organization' to pick this job...
+2021-09-15T19:37:33.3711630Z Job is waiting for a hosted runner to come online.
+2021-09-15T19:37:36.2058665Z Job is about to start running on the hosted runner: GitHub Actions 3 (hosted)
+2021-09-15T19:37:40.7234756Z Current runner version: '2.282.0'
+2021-09-15T19:37:40.7262752Z ##[group]Operating System
+2021-09-15T19:37:40.7263731Z Ubuntu
+2021-09-15T19:37:40.7264234Z 20.04.3
+2021-09-15T19:37:40.7264723Z LTS
+2021-09-15T19:37:40.7265192Z ##[endgroup]
+2021-09-15T19:37:40.7265825Z ##[group]Virtual Environment
+2021-09-15T19:37:40.7266500Z Environment: ubuntu-20.04
+2021-09-15T19:37:40.7267114Z Version: 20210906.1
+2021-09-15T19:37:40.7268149Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20210906.1/images/linux/Ubuntu2004-README.md
+2021-09-15T19:37:40.7270066Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20210906.1
+2021-09-15T19:37:40.7271032Z ##[endgroup]
+2021-09-15T19:37:40.7271681Z ##[group]Virtual Environment Provisioner
+2021-09-15T19:37:40.7272393Z 1.0.0.0-master-20210816-1
+2021-09-15T19:37:40.7272933Z ##[endgroup]
+2021-09-15T19:37:40.7275016Z ##[group]GITHUB_TOKEN Permissions
+2021-09-15T19:37:40.7276425Z Actions: write
+2021-09-15T19:37:40.7277093Z Checks: write
+2021-09-15T19:37:40.7277600Z Contents: write
+2021-09-15T19:37:40.7278211Z Deployments: write
+2021-09-15T19:37:40.7278772Z Discussions: write
+2021-09-15T19:37:40.7279369Z Issues: write
+2021-09-15T19:37:40.7279875Z Metadata: read
+2021-09-15T19:37:40.7280446Z Packages: write
+2021-09-15T19:37:40.7281014Z PullRequests: write
+2021-09-15T19:37:40.7281708Z RepositoryProjects: write
+2021-09-15T19:37:40.7282429Z SecurityEvents: write
+2021-09-15T19:37:40.7282993Z Statuses: write
+2021-09-15T19:37:40.7283659Z ##[endgroup]
+2021-09-15T19:37:40.7286781Z Prepare workflow directory
+2021-09-15T19:37:40.7921222Z Prepare all required actions
+2021-09-15T19:37:40.7931656Z Getting action download info
+2021-09-15T19:37:40.9888016Z Download action repository 'actions/checkout@v2' (SHA:5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f)
+2021-09-15T19:37:42.7956629Z Download action repository 'actions/setup-node@v2' (SHA:25316bbc1f10ac9d8798711f44914b1cf3c4e954)
+2021-09-15T19:37:43.2171039Z ##[group]Run actions/checkout@v2
+2021-09-15T19:37:43.2171786Z with:
+2021-09-15T19:37:43.2172531Z   repository: xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:37:43.2173796Z   token: ***
+2021-09-15T19:37:43.2174302Z   ssh-strict: true
+2021-09-15T19:37:43.2174949Z   persist-credentials: true
+2021-09-15T19:37:43.2175561Z   clean: true
+2021-09-15T19:37:43.2176065Z   fetch-depth: 1
+2021-09-15T19:37:43.2176581Z   lfs: false
+2021-09-15T19:37:43.2177081Z   submodules: false
+2021-09-15T19:37:43.2177613Z ##[endgroup]
+2021-09-15T19:37:43.4677317Z Syncing repository: xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:37:43.4722081Z ##[group]Getting Git version info
+2021-09-15T19:37:43.4723876Z Working directory is '/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts'
+2021-09-15T19:37:43.4778185Z [command]/usr/bin/git version
+2021-09-15T19:37:43.4959178Z git version 2.33.0
+2021-09-15T19:37:43.4982634Z ##[endgroup]
+2021-09-15T19:37:43.4989769Z Deleting the contents of '/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts'
+2021-09-15T19:37:43.4994449Z ##[group]Initializing the repository
+2021-09-15T19:37:43.4998605Z [command]/usr/bin/git init /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts
+2021-09-15T19:37:43.5071859Z hint: Using 'master' as the name for the initial branch. This default branch name
+2021-09-15T19:37:43.5073152Z hint: is subject to change. To configure the initial branch name to use in all
+2021-09-15T19:37:43.5074273Z hint: of your new repositories, which will suppress this warning, call:
+2021-09-15T19:37:43.5075113Z hint: 
+2021-09-15T19:37:43.5076145Z hint: 	git config --global init.defaultBranch <name>
+2021-09-15T19:37:43.5076973Z hint: 
+2021-09-15T19:37:43.5077986Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2021-09-15T19:37:43.5079312Z hint: 'development'. The just-created branch can be renamed via this command:
+2021-09-15T19:37:43.5080212Z hint: 
+2021-09-15T19:37:43.5081052Z hint: 	git branch -m <name>
+2021-09-15T19:37:43.5092878Z Initialized empty Git repository in /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/.git/
+2021-09-15T19:37:43.5105581Z [command]/usr/bin/git remote add origin https://github.com/xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:37:43.5147718Z ##[endgroup]
+2021-09-15T19:37:43.5149464Z ##[group]Disabling automatic garbage collection
+2021-09-15T19:37:43.5152755Z [command]/usr/bin/git config --local gc.auto 0
+2021-09-15T19:37:43.5196353Z ##[endgroup]
+2021-09-15T19:37:43.5201884Z ##[group]Setting up auth
+2021-09-15T19:37:43.5208418Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-15T19:37:43.5239054Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-15T19:37:43.5694350Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-15T19:37:43.8476055Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-15T19:37:43.8528809Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2021-09-15T19:37:43.8530640Z ##[endgroup]
+2021-09-15T19:37:43.8531970Z ##[group]Fetching the repository
+2021-09-15T19:37:43.8534075Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +997ef0caf8c8a2a9fd2124bec779b8d987885bac:refs/remotes/origin/main
+2021-09-15T19:37:43.8535805Z remote: Enumerating objects: 11, done.        
+2021-09-15T19:37:43.8536629Z remote: Counting objects:   9% (1/11)        
+2021-09-15T19:37:43.8537391Z remote: Counting objects:  18% (2/11)        
+2021-09-15T19:37:43.8538172Z remote: Counting objects:  27% (3/11)        
+2021-09-15T19:37:43.8539157Z remote: Counting objects:  36% (4/11)        
+2021-09-15T19:37:43.8539979Z remote: Counting objects:  45% (5/11)        
+2021-09-15T19:37:43.8540755Z remote: Counting objects:  54% (6/11)        
+2021-09-15T19:37:43.8541512Z remote: Counting objects:  63% (7/11)        
+2021-09-15T19:37:43.8542289Z remote: Counting objects:  72% (8/11)        
+2021-09-15T19:37:43.8543066Z remote: Counting objects:  81% (9/11)        
+2021-09-15T19:37:43.8543824Z remote: Counting objects:  90% (10/11)        
+2021-09-15T19:37:43.8544598Z remote: Counting objects: 100% (11/11)        
+2021-09-15T19:37:43.8545396Z remote: Counting objects: 100% (11/11), done.        
+2021-09-15T19:37:43.8546208Z remote: Compressing objects:  14% (1/7)        
+2021-09-15T19:37:43.8547354Z remote: Compressing objects:  28% (2/7)        
+2021-09-15T19:37:43.8548109Z remote: Compressing objects:  42% (3/7)        
+2021-09-15T19:37:43.8548848Z remote: Compressing objects:  57% (4/7)        
+2021-09-15T19:37:43.8550976Z remote: Compressing objects:  71% (5/7)        
+2021-09-15T19:37:43.8552011Z remote: Compressing objects:  85% (6/7)        
+2021-09-15T19:37:43.8552786Z remote: Compressing objects: 100% (7/7)        
+2021-09-15T19:37:43.8553567Z remote: Compressing objects: 100% (7/7), done.        
+2021-09-15T19:37:43.8554737Z remote: Total 11 (delta 0), reused 9 (delta 0), pack-reused 0        
+2021-09-15T19:37:43.8556080Z From https://github.com/xwp/gutenberg-issue-21872-scripts
+2021-09-15T19:37:43.8557532Z  * [new ref]         997ef0caf8c8a2a9fd2124bec779b8d987885bac -> origin/main
+2021-09-15T19:37:43.8559268Z ##[endgroup]
+2021-09-15T19:37:43.8560498Z ##[group]Determining the checkout info
+2021-09-15T19:37:43.8561689Z ##[endgroup]
+2021-09-15T19:37:43.8562840Z ##[group]Checking out the ref
+2021-09-15T19:37:43.8564323Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2021-09-15T19:37:43.8565382Z Switched to a new branch 'main'
+2021-09-15T19:37:43.8566586Z Branch 'main' set up to track remote branch 'main' from 'origin'.
+2021-09-15T19:37:43.8567979Z ##[endgroup]
+2021-09-15T19:37:43.8569127Z [command]/usr/bin/git log -1 --format='%H'
+2021-09-15T19:37:43.8570296Z '997ef0caf8c8a2a9fd2124bec779b8d987885bac'
+2021-09-15T19:37:43.8702052Z ##[group]Run actions/setup-node@v2
+2021-09-15T19:37:43.8702597Z with:
+2021-09-15T19:37:43.8703075Z   node-version: 14
+2021-09-15T19:37:43.8703823Z   always-auth: false
+2021-09-15T19:37:43.8704375Z   check-latest: false
+2021-09-15T19:37:43.8705347Z   token: ***
+2021-09-15T19:37:43.8705800Z ##[endgroup]
+2021-09-15T19:37:44.0607261Z Found in cache @ /opt/hostedtoolcache/node/14.17.6/x64
+2021-09-15T19:37:44.0678276Z ##[group]Run npm install
+2021-09-15T19:37:44.0678899Z [36;1mnpm install[0m
+2021-09-15T19:37:44.0726977Z shell: /usr/bin/bash -e {0}
+2021-09-15T19:37:44.0727549Z ##[endgroup]
+2021-09-15T19:38:09.2608245Z 
+2021-09-15T19:38:09.2618895Z > core-js@3.17.3 postinstall /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/core-js
+2021-09-15T19:38:09.2621428Z > node -e "try{require('./postinstall')}catch(e){}"
+2021-09-15T19:38:09.2622215Z 
+2021-09-15T19:38:09.3259969Z 
+2021-09-15T19:38:09.3262582Z > core-js-pure@3.17.3 postinstall /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/core-js-pure
+2021-09-15T19:38:09.3264290Z > node -e "try{require('./postinstall')}catch(e){}"
+2021-09-15T19:38:09.3264741Z 
+2021-09-15T19:38:09.5699878Z 
+2021-09-15T19:38:09.5703368Z > core-js@2.6.12 postinstall /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/wait-on/node_modules/core-js
+2021-09-15T19:38:09.5705851Z > node -e "try{require('./postinstall')}catch(e){}"
+2021-09-15T19:38:09.5706628Z 
+2021-09-15T19:38:11.3146544Z npm WARN gutenberg-issue-21872-scripts No repository field.
+2021-09-15T19:38:11.3222536Z npm WARN gutenberg-issue-21872-scripts No license field.
+2021-09-15T19:38:11.3327020Z npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.3.2 (node_modules/fsevents):
+2021-09-15T19:38:11.3329509Z npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.3.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+2021-09-15T19:38:11.3351350Z 
+2021-09-15T19:38:11.3390639Z added 1489 packages from 703 contributors and audited 1490 packages in 26.49s
+2021-09-15T19:38:12.1373627Z 
+2021-09-15T19:38:12.1378604Z 190 packages are looking for funding
+2021-09-15T19:38:12.1380423Z   run `npm fund` for details
+2021-09-15T19:38:12.1381288Z 
+2021-09-15T19:38:12.1382783Z found 0 vulnerabilities
+2021-09-15T19:38:12.1383609Z 
+2021-09-15T19:38:12.2048334Z ##[group]Run npm run lint
+2021-09-15T19:38:12.2048966Z [36;1mnpm run lint[0m
+2021-09-15T19:38:12.2097307Z shell: /usr/bin/bash -e {0}
+2021-09-15T19:38:12.2097781Z ##[endgroup]
+2021-09-15T19:38:12.4283501Z 
+2021-09-15T19:38:12.4286432Z > @ lint /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts
+2021-09-15T19:38:12.4288105Z > wp-scripts lint-js
+2021-09-15T19:38:12.4288700Z 
+2021-09-15T19:38:14.0927686Z 
+2021-09-15T19:38:14.0934768Z Oops! Something went wrong! :(
+2021-09-15T19:38:14.0935864Z 
+2021-09-15T19:38:14.0959939Z ESLint: 7.32.0
+2021-09-15T19:38:14.0960986Z 
+2021-09-15T19:38:14.0962382Z Error: Cannot find module 'prettier'
+2021-09-15T19:38:14.0963402Z Require stack:
+2021-09-15T19:38:14.0965467Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint-plugin-prettier/eslint-plugin-prettier.js
+2021-09-15T19:38:14.0968392Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/@eslint/eslintrc/lib/config-array-factory.js
+2021-09-15T19:38:14.0970704Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/@eslint/eslintrc/lib/index.js
+2021-09-15T19:38:14.0973399Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/cli-engine/cli-engine.js
+2021-09-15T19:38:14.0976168Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/eslint/eslint.js
+2021-09-15T19:38:14.0980798Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/eslint/index.js
+2021-09-15T19:38:14.0982932Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/cli.js
+2021-09-15T19:38:14.0985015Z - /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/bin/eslint.js
+2021-09-15T19:38:14.0986986Z Occurred while linting /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/main.js:1
+2021-09-15T19:38:14.0988198Z     at Function.Module._resolveFilename (internal/modules/cjs/loader.js:889:15)
+2021-09-15T19:38:14.0989024Z     at Function.Module._load (internal/modules/cjs/loader.js:745:27)
+2021-09-15T19:38:14.0989895Z     at Module.require (internal/modules/cjs/loader.js:961:19)
+2021-09-15T19:38:14.0991451Z     at require (/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+2021-09-15T19:38:14.0994010Z     at Program (/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint-plugin-prettier/eslint-plugin-prettier.js:157:26)
+2021-09-15T19:38:14.0996618Z     at /home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/linter/safe-emitter.js:45:58
+2021-09-15T19:38:14.0997925Z     at Array.forEach (<anonymous>)
+2021-09-15T19:38:14.0999712Z     at Object.emit (/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/linter/safe-emitter.js:45:38)
+2021-09-15T19:38:14.1002631Z     at NodeEventGenerator.applySelector (/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/linter/node-event-generator.js:293:26)
+2021-09-15T19:38:14.1005964Z     at NodeEventGenerator.applySelectors (/home/runner/work/gutenberg-issue-21872-scripts/gutenberg-issue-21872-scripts/node_modules/eslint/lib/linter/node-event-generator.js:322:22)
+2021-09-15T19:38:14.1794539Z npm ERR! code ELIFECYCLE
+2021-09-15T19:38:14.1795508Z npm ERR! errno 2
+2021-09-15T19:38:14.1823927Z npm ERR! @ lint: `wp-scripts lint-js`
+2021-09-15T19:38:14.1825082Z npm ERR! Exit status 2
+2021-09-15T19:38:14.1825807Z npm ERR! 
+2021-09-15T19:38:14.1826582Z npm ERR! Failed at the @ lint script.
+2021-09-15T19:38:14.1872899Z npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-09-15T19:38:14.1960083Z 
+2021-09-15T19:38:14.1960878Z npm ERR! A complete log of this run can be found in:
+2021-09-15T19:38:14.1962187Z npm ERR!     /home/runner/.npm/_logs/2021-09-15T19_38_14_187Z-debug.log
+2021-09-15T19:38:14.2025207Z ##[error]Process completed with exit code 2.
+2021-09-15T19:38:14.2131002Z Post job cleanup.
+2021-09-15T19:38:14.3406473Z [command]/usr/bin/git version
+2021-09-15T19:38:14.3445951Z git version 2.33.0
+2021-09-15T19:38:14.3481653Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2021-09-15T19:38:14.3552071Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2021-09-15T19:38:14.3775442Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2021-09-15T19:38:14.3804574Z http.https://github.com/.extraheader
+2021-09-15T19:38:14.3806488Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2021-09-15T19:38:14.3833011Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2021-09-15T19:38:14.4133275Z Cleaning up orphan processes
