@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "lint": "wp-scripts lint-js"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^18.0.1"
+  }
+}
