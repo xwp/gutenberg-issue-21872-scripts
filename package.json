@@ -3,6 +3,7 @@
     "lint": "wp-scripts lint-js"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^18.0.1"
+    "@wordpress/scripts": "^18.0.1",
+    "prettier": "npm:wp-prettier@^2.2.1-beta-1"
   }
 }
