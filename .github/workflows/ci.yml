@@ -16,5 +16,7 @@ jobs:
           node-version: ${{ matrix.node }}
       - name: Install
         run: npm install
+      - name: Show prettier status
+        run: npm ls prettier
       - name: Lint
         run: npm run lint
